@@ -44,7 +44,7 @@ p {
     margin-right: auto;
     margin-left: auto;
     margin-top: 10rem;
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
     animation: moveUpDown 2s ease-in-out infinite;
 
 }
