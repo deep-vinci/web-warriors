@@ -130,6 +130,7 @@ nav {
     align-items: center;
     /* backdrop-filter: blur(5px); */
     border: 0.1px solid rgba(2, 0, 0, 0.16);
+
 }
 
 .logo img {
@@ -200,6 +201,7 @@ ul:last-child {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    display: none;
 }
 
 #check {
@@ -993,6 +995,9 @@ ul:last-child {
         margin: 5rem;
     }
 
+    .arrow-down {
+        margin-top: 3rem;
+    }
 
     .img {
         display: none;
@@ -1005,6 +1010,11 @@ ul:last-child {
     .footer {
         padding: 0;
         margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .short-container h1 {
+        font-size: 4rem;
     }
 
     .huge-name {
@@ -1082,6 +1092,9 @@ ul:last-child {
         align-items: center;
     }
 
+    .checkbtn {
+        display: block;
+    }
 }
 
 .contact {
