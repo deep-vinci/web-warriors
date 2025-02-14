@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
     <title>Lumous Heights School</title>
 </head>
 
@@ -16,18 +21,19 @@
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-            Nav
+            <img class="menu" src="menu.png" alt="">
         </label>
         <label class="logo">
-            <img src="logo.png" alt="">Lumous heights</label>
+            <img src="logo.png" alt="">Lumous Heights</label>
         <ul>
-            <li><a class="active" href="#">About us</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Admission</a></li>
+            <li><a class="active" href="/about.html">About us</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/admission.html">Admission</a></li>
         </ul>
         <ul>
-            <li>Register</li>
+            <li onclick="location.href = 'faq.html';">FAQ
+                <img class="arrow-up" src="arrow-up.png" alt="">
+            </li>
         </ul>
     </nav>
 
@@ -36,21 +42,132 @@
             <h1>Lumous Heights <br> School</h1>
             <p>where innovation and excellence shape tomorrow’s leaders. With a dynamic curriculum and cutting-edge
                 facilities, we empower students to explore their full potential and succeed in a rapidly evolving world.
-
             </p>
-            <div class="canvas"></div>
+            <button class="apply">Apply now</button>
+            <!-- <div class="canvas">
+                <div class="globe"></div>
+            </div> -->
+            <img class="arrow-down" src="arrow-down.png" alt="">
         </div>
-        <div class="hero">
-            <h1>Lumous Heights <br> School</h1>
-            <p>where innovation and excellence shape tomorrow’s leaders. With a dynamic curriculum and cutting-edge
-                facilities, we empower students to explore their full potential and succeed in a rapidly evolving world.
+        <div class="about">
+            <div class="header">
+                <h1>About Us</h1>
+            </div>
+            <div class="grid-1">
+                <div class="note">
+                    <h2>Who are we</h2>
+                    <p>Welcome to Lumous Heights School, where learning meets innovation. We are a forward-thinking
+                        institution dedicated to shaping bright futures through a holistic, student-centered approach.
+                        At Lumous Heights, we nurture young minds with academic excellence, creativity, and leadership,
+                        empowering students to thrive in an ever-evolving world.
+                    </p>
+                    <button class="read-more">Read more <span>🚀</span></button>
+                </div>
+                <div class="vision">
+                    <h2>Our Vision</h2>
+                    <p> To be a global leader in education, fostering a new generation of confident, compassionate, and
+                        capable individuals, equipped with the skills and mindset to shape a better future.To be a
+                        global leader in education, fostering a new generation of confident, compassionate, and capable
+                    </p>
+                </div>
+            </div>
 
-            </p>
-            <!-- <div class="canvas"></div> -->
+            <div class="principal-note">
+                <div class="pfp">
+                    <span>Principal</span>
+                </div>
+                <div class="principal-writes">At Lumous Heights, we believe that education is more than just books and
+                    exams—it’s about shaping character, unlocking potential, and igniting a passion for learning. Our
+                    dedicated faculty and cutting-edge facilities create a vibrant learning community where every
+                    student is encouraged to dream big and achieve more. We welcome you to experience the Lumous
+                    difference!
+                </div>
+            </div>
         </div>
-        <div class="about"></div>
-        <div class="footer"></div>
+
+        <div class="acad">
+            <div class="header">
+                <h1>Academics</h1>
+            </div>
+            <div class="acad-1">
+                <div class="kids"></div>
+                <div class="desc">
+                    <h2>Beyond the Cirriculum</h2>
+                    <p>we embrace learning as a life-long adventure that extends well beyond textbooks. Our students
+                        engage in creative projects, leadership initiatives, and community collaborations that
+                        nurture critical thinking and real-world skills. This holistic approach ensures they grow
+                        into innovative, well-rounded individuals ready to face future challenges.</p>
+                </div>
+            </div>
+
+            <div class="parent-say">You promote learning for learning’s sake, and this has awakened my daughter’s
+                curiosity in the world, in education and in lifelong learning <br> - Lumous Parent
+            </div>
+
+        </div>
+        <div id="map" class="map">
+            <button class="schedule">Schedule a Campus tour</button>
+        </div>
+
+        <div class="gallery">
+            <div class="header">
+                <h1>Gallery</h1>
+            </div>
+            <div class="gallery-box">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+            <button onclick="javascript:location.href='gallery.html'" class="view-gallery">
+                View Gallery
+            </button>
+        </div>
+        <div class="footer">
+            <div class="footer-overlay">
+                <div class="contact">contact us</div>
+                <div class="email">help@lumous.com
+                    <div class="bottom-nav">
+                        <a href="/about.html">about us</a>
+                        <a href="/gallery.html">gallery</a>
+                        <a href="/admission.html">admission</a>
+                        <a href="/faq.html">FAQs</a>
+                    </div>
+                </div>
+                <div class="huge-name">
+                    <img src="logo.png" alt="">Lumous Heights
+                </div>
+                <div class="end">
+                    <div class="copy">&copy; 2024 Deepak Jha, All rights reserved.</div>
+                    <div class="socials">
+                        <a href="">Linkedin</a>
+                        <a href="">Facebook</a>
+                        <a href="">X</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="loadingScreen">
+        <!--My content is the word "soundscape" but the o is replaced with a disc-->
+        <h1><img src="logo.png" alt="">Lumous Height School</h1>
+    </div>
+
+
+    <script>
+        var map = L.map("map", { zoomControl: false }).setView([20.5937, 78.9629], 13);
+
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        L.marker([20.5937, 78.9629])
+            .addTo(map)
+            .bindPopup("Lumous Heights  School")
+            .openPopup();
+
+    </script>
 </body>
 
 </html>

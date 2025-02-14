@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lumous Heights School is a premier institution fostering innovation, excellence, and holistic learning. Empowering students with knowledge, creativity, and leadership skills for a brighter future.">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <title>Lumous Heights School</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img class="menu" src="menu.png" alt="">
+        </label>
+        <label class="logo" onclick="location.href = '/';">
+            <img src="logo.png" alt="">Lumous Heights</label>
+        <ul>
+            <li><a class="active" href="/about.html">About us</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/admission.html">Admission</a></li>
+        </ul>
+        <ul>
+            <li>FAQ
+                <img class="arrow-up" src="arrow-up.png" alt="">
+            </li>
+        </ul>
+    </nav>
+
+    <div class="short-container">
+        <h1>FAQs</h1>
+    </div>
+    <div class="content-container">
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    What are the admission requirements and deadlines?
+                    <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Admissions are open to students who meet our academic and behavioral standards. Requirements
+                        include a completed application form, previous school records, and a personal statement. The
+                        application deadline is typically [insert deadline date] for the upcoming academic year.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I apply for admission?
+                    <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>You can apply online by filling out our application form on the Admissions page. Alternatively,
+                        you can download a brochure for detailed instructions or schedule a campus visit to speak with
+                        our admissions team in person.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is the student-to-teacher ratio at Lumous Heights School?
+                    <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We pride ourselves on maintaining a low student-to-teacher ratio, typically around 15:1, to
+                        ensure personalized attention and an optimal learning environment for every student.
+
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What academic programs and subjects are offered?
+                    <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Our curriculum covers core subjects such as Mathematics, Science, Language Arts, and Social
+                        Studies, complemented by specialized programs in STEM, arts, and language studies. We also offer
+                        enrichment activities that foster critical thinking and creativity.
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What extracurricular activities are available?
+                    <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Lumous Heights School offers a wide range of extracurricular activities including sports teams,
+                        music and art clubs, debate and robotics teams, as well as community service initiatives. These
+                        programs are designed to help students explore their interests and develop essential life
+                        skills.
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Are there scholarship opportunities or financial aid options?
+                    <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we offer merit-based scholarships as well as financial aid programs for families in need.
+                        Detailed information about these opportunities can be found on our Admissions page or by
+                        contacting our financial aid office directly.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I schedule a campus tour or visit?
+                    <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>You can easily schedule a campus tour by clicking the “Schedule a Visit” button on our Map
+                        section. We offer guided tours during weekdays and on special event days, so please check our
+                        calendar for available dates and times.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Who can I contact for more information?
+                    <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>For further inquiries, you can reach out to our Admissions Office via email at help@lumous.com or
+                        call us at +2319 239 230. Our friendly staff is always ready to assist you
+                        with any questions.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
