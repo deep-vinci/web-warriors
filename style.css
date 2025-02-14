@@ -43,8 +43,8 @@ p {
     width: 40px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    /* margin-top: 10rem; */
+    /* margin-bottom:.rem; */
     animation: moveUpDown 2s ease-in-out infinite;
 
 }
@@ -303,7 +303,7 @@ ul:last-child {
 
     p {
         width: 70%;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         padding: 0 0 0 5rem;
         color: #f2e6d0;
         font-size: 1.1rem;
